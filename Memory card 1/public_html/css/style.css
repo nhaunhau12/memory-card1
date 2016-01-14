@@ -1,0 +1,47 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clr:before, .clr:after {
+    content: "";
+    display: table;
+} 
+.clr:after {
+    clear: both;
+}
+
+.page {
+    
+}
+
+.card {
+    float: left;
+    font-size: 0;
+    margin: 20px 27px;
+    width: 13.1%;
+}
+
+.backside, .front {
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.backside {
+    transform: rotateY(0deg);
+    position: absolute;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.card.show .front {
+    transform: rotateY(0deg);
+}
+
+.card.show .backside {
+    transform: rotateY(180deg);
+}
+
