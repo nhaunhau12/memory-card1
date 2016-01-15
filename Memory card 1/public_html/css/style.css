@@ -21,6 +21,7 @@
     font-size: 0;
     margin: 20px 27px;
     width: 13.1%;
+    cursor: pointer;
 }
 
 .backside, .front {
